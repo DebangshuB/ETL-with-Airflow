@@ -12,15 +12,20 @@ from airflow.operators.email_operator import EmailOperator
 from etl_pipeline import _load, _transform, _unzip
 import os
 
-HOME = os.environ.get("HOME")
 """
     Current Link : "https://zenodo.org/record/3227177/files/OpenStack.tar.gz?download=1"
-    I'll get this from the airflow metadata database.
+    I'll get this from the airflow metadata database as LINK.
+    
+    The TO_EMAIL is the email where an email is sent incase of DAS faliure or success.
+    The SMTP configurations have to be done in the airflow.cfg or the docker-compose before this works.
 """
+HOME = os.environ.get("HOME")
+FILES_PATH = os.path.join(HOME, 'airflow', 'dags', 'etl_pipeline')
+
 VAR = Variable.get("ETL_PIPELINE", deserialize_json=True)
 LINK = VAR["LINK"]
 TO_EMAIL = VAR["TO_EMAIL"]
-FILES_PATH = os.path.join(HOME, 'airflow', 'dags', 'etl_pipeline')
+
 
 args = {
     'owner': 'airflow',

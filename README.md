@@ -29,6 +29,7 @@ Here is the DAG for the code in this repository.
 ##  Visualizations
 Here are some visualizations I was able to make based on the data I mined.
 
+The visualizations were dont using Matplotlib, a popular Python library for creating visualizations.
 
 | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/statuscode.jpg) | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/type.jpg) | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/methods.jpg) |
 |:--:| :--: | :--: |
@@ -41,4 +42,4 @@ Here are some visualizations I was able to make based on the data I mined.
 
 | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/apicalloverdays.jpg) | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/sumcalls.jpg)| 
 |:--:| :--: |
-| *Number of API Calls over days* | *Number of Calls over Hour Of Day* | 
+| *Number of API Calls over days* | *Number of Calls over Hour Of Day* |

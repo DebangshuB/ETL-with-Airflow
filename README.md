@@ -1,5 +1,7 @@
 # ETL with Airflow
+
 ## Introduction
+
 This repository contains the code for an [ETL pipeline](https://www.snowflake.com/guides/etl-pipeline) for [OpenStack](https://www.openstack.org/) Logs from [Zenodo](https://zenodo.org/record/3227177) written as a DAG in [Apache Airflow](https://airflow.apache.org/) in Python.
 
 ![](https://img.shields.io/badge/mysql-8.0.27-brightgreen)
@@ -29,7 +31,7 @@ Here is the DAG for the code in this repository.
 ##  Visualizations
 Here are some visualizations I was able to make based on the data I mined.
 
-The visualizations were dont using Matplotlib, a popular Python library for creating visualizations.
+The visualizations were done using [Matplotlib](https://matplotlib.org/), a popular Python library for creating visualizations.
 
 | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/statuscode.jpg) | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/type.jpg) | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/methods.jpg) |
 |:--:| :--: | :--: |

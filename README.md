@@ -11,7 +11,7 @@ This repository contains the code for an [ETL pipeline](https://www.snowflake.co
 
 Here is the DAG for the code in this repository.
 
-![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/DAG.png)
+![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/DAG.jpg)
 
 * It's a very simple DAG (literally a straight list) consisting of the following tasks :-
   * __download__ :- Download the tar.gz file from the download link.
@@ -24,11 +24,21 @@ Here is the DAG for the code in this repository.
   * __clear__ :- Clears all the extra files created.
   * __success_email__ :- Sends an email to specified email on success.
   * An email is send in case of a faliure aswell.
+  * Can be configured to run at any regular interval.
 
 ##  Visualizations
 Here are some visualizations I was able to make based on the data I mined.
 
 
-| ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/statuscode.png) | 
-|:--:| 
-| *Status Codes returned* |
+| ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/statuscode.jpg) | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/type.jpg) | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/methods.jpg) |
+|:--:| :--: | :--: |
+| *Status Codes returned* | *Type* | *Methods Used* |
+
+
+| ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/length.jpg) | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/time_taken.jpg)| 
+|:--:| :--: |
+| *Length Of Message* | *Time Taken* | 
+
+| ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/apicalloverdays.jpg) | ![](https://github.com/DebangshuB/ETL-with-Airflow/blob/main/Images/sumcalls.jpg)| 
+|:--:| :--: |
+| *Number of API Calls over days* | *Number of Calls over Hour Of Day* | 
